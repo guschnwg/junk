@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JUNK</title>
 
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JUNK</title>
-  </head>
+        <script type="text/javascript">
+            adroll_adv_id = "PYNBKZVASBCG3D46NT5VFX";
+            adroll_pix_id = "XQURIW6XAFETRLY6J7F6GI";
+            adroll_version = "2.0";
+            (function (w, d, e, o, a) {
+                w.__adroll_loaded = true;
+                w.adroll = w.adroll || [];
+                w.adroll.f = ["setProperties", "identify", "track"];
+                var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id + "/roundtrip.js";
+                for (a = 0; a < w.adroll.f.length; a++) {
+                    w.adroll[w.adroll.f[a]] =
+                        w.adroll[w.adroll.f[a]] ||
+                        (function (n) {
+                            return function () {
+                                w.adroll.push([n, arguments]);
+                            };
+                        })(w.adroll.f[a]);
+                }
+                e = d.createElement("script");
+                o = d.getElementsByTagName("script")[0];
+                e.async = 1;
+                e.src = roundtripUrl;
+                o.parentNode.insertBefore(e, o);
+            })(window, document);
+            adroll.track("pageView");
+        </script>
+    </head>
 
-  <body>
-      <script src="https://unpkg.com/petite-vue" defer init></script>
-  </body>
-
+    <body>
+        <script src="https://unpkg.com/petite-vue" defer init></script>
+    </body>
 </html>
